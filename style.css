@@ -10,20 +10,28 @@
 }
 .prodotto-a {
     width: 100%;
-    z-index: 100;
+    position: relative;
+    z-index: 2;
 }
 .prodotto-b {
     position: absolute;
     width: 100%;
-    right: 45%;
+    right: 0%;
     z-index: 1;
 }
-.card:hover .prodotto-b {
-    z-index: 3;
+.prodotto-a:hover {
+    z-index:-3;
+}
+.prodotto-b:hover {
+    z-index:3;
 }
 .card {
-    position: relative;
     width: 32%;
+    display: inline-block;
+    padding-top: 50px;
+}
+.immagine {
+    position: relative;
 }
 .cuore {
     position: absolute;
@@ -39,5 +47,25 @@
     top: 90%;
     right: 85%;
     background-color:rgb(255, 70, 110);
+    z-index: 200;
+    padding: 3px;
+    color: white;
+}
+.sostenibilità {
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    background-color:rgb(0, 119, 6);
+    color: white;
+    padding: 3px;
+    z-index: 200;
+}
+.sostenibilità-singolo {
+    position: absolute;
+    top: 90%;
+    right: 75%;
+    background-color:rgb(0, 119, 6);
+    color: white;
+    padding: 3px;
     z-index: 200;
 }
