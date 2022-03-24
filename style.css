@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+.prodotto-a {
+    width: 100%;
+    z-index: 100;
+}
+.prodotto-b {
+    position: absolute;
+    width: 100%;
+    right: 45%;
+    z-index: 1;
+}
+.card:hover .prodotto-b {
+    z-index: 3;
+}
+.card {
+    position: relative;
+    width: 32%;
+}
+.cuore {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: white;
+    padding: 2px 5px 2px;
+    z-index: 200;
+    
+}
+.sconto {
+    position: absolute;
+    top: 90%;
+    right: 85%;
+    background-color:rgb(255, 70, 110);
+    z-index: 200;
+}
